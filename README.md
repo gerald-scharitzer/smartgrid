@@ -10,12 +10,16 @@ this packge as follows.
 2. Check Rust with `rustc -V`
 3. Install `wasm-pack` with `curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh`
 4. Check `wasm-pack` with `wasm-pack -V`
-5. Clone repository with `git clone https://github.com/gerald-scharitzer/smartgrid.git`
-6. Build and run with `cargo run`
+5. Install `npm` as in https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+6. Check `npm` with `npm -v`
+7. Clone repository with `git clone https://github.com/gerald-scharitzer/smartgrid.git`
+8. Build and run with `cargo run`
 
 # Issues
 
 Usually I install Rust manually as in the sections below, such that I can verify the signature of the installer first, but then installing `wasm-pack` with `cargo install wasm-pack` fails while compiling `openssl` with file not found and `curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh` fails with rustup not found. Therefore I fell back to rustup. I did not try to install `wasm-pack` via `npm` or `yarn`.
+
+`cargo install cargo-generate` fails the compile of `openssl-sys` also with file not found. Therefore I fell back to set up the Rust Web Assembly project manually as in https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/getting-started/manual-setup.html.
 
 ## Install Rust
 
